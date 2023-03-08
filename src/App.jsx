@@ -13,10 +13,10 @@ const App = () => {
     return (
         <>
             <nav className="w-auto h-24 bg-red-500 flex justify-between items-center ">
-                <span className="m-16">
+                <span className="ml-16">
                     <Link to="/">LearnChess</Link>
                 </span>
-                <ul className="gap-20 flex">
+                <ul className="gap-20 flex mr-16">
                     <li>
                         <Link to="/FAQ">FAQ</Link>
                     </li>

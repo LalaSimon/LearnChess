@@ -25,7 +25,7 @@ const Home = () => {
                 <ul className="flex gap-4 flex-col">
                     <div
                         onClick={() => setToggleFirst(!toggleFirst)}
-                        className="cursor-pointer"
+                        className="cursor-pointer text-4xl"
                     >
                         Rozdzial 1
                     </div>
@@ -68,7 +68,7 @@ const Home = () => {
                     )}
                     <div
                         onClick={() => setToggleSecond(!toggleSecond)}
-                        className="cursor-pointer"
+                        className="cursor-pointer text-4xl"
                     >
                         Rozdzial 2
                     </div>
