@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { App, PlayChess } from "./App";
+import { App } from "./App";
+import { BrowserRouter } from "react-router-dom";
 
 //primeReact:
 import "primereact/resources/themes/lara-light-indigo/theme.css";
@@ -11,6 +12,8 @@ import "./index.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <App />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </React.StrictMode>
 );

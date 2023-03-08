@@ -24,7 +24,7 @@ const PlayChess = ({ boardposition }) => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center mt-96">
+        <div className="flex flex-col justify-center items-center pt-96">
             <Chessboard
                 boardWidth={660}
                 position={game.fen()} // Dont touch it!!! If you want a specific position, pass it to props in FEN
