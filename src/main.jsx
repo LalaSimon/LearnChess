@@ -7,7 +7,6 @@ import { BrowserRouter } from "react-router-dom";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
-
 import "./index.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

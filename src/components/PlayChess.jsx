@@ -1,13 +1,20 @@
-import React, { useState, Component } from "react";
+import React, { useState, Component, useEffect } from "react";
 import "../index.scss";
 import { Chess } from "chess.js";
 import { Chessboard } from "react-chessboard";
+import { Lessons } from "./Lessons";
+import { Home } from "../pages/home";
 
-const PlayChess = ({ boardposition }) => {
+const PlayChess = ({ boardposition, boardOrientation }) => {
     // You have to pass FEN in string to a props boardposition. If you dont passs the boardposition it will get starting position as default
     const [game, setGame] = useState(
         boardposition ? new Chess(boardposition) : new Chess()
     );
+    // sprawdza czy doszlo do zmiany pozycji na szachownicy
+    useEffect(() => {
+        setGame(new Chess(boardposition));
+    }, [boardposition]);
+
     const makeAMove = (move) => {
         const gameCopy = { ...game };
         const result = gameCopy.move(move);
@@ -24,11 +31,12 @@ const PlayChess = ({ boardposition }) => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center pt-96">
+        <div className="flex flex-col justify-center items-center">
             <Chessboard
-                boardWidth={660}
+                boardWidth={760}
                 position={game.fen()} // Dont touch it!!! If you want a specific position, pass it to props in FEN
                 onPieceDrop={onDrop}
+                boardOrientation={boardOrientation}
             />
         </div>
     );
