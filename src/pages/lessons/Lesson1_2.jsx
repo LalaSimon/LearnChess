@@ -8,6 +8,7 @@ import { PlayChess } from "../../components/PlayChess";
 import { Route, Routes, Link } from "react-router-dom";
 import { LessonsList } from "../../components/LessonsList";
 import { Tour } from "../tours/Tour1_2";
+import { TipButton } from "../../components/tipButton";
 
 const Lesson1_2 = () => {
     const [position, setPosition] = useState();
@@ -19,6 +20,7 @@ const Lesson1_2 = () => {
     const changeOrentantion = (boardOrientation) => {
         setBoardOrientantion(boardOrientation);
     };
+    const [toggleTipButton, setToggleTipButton] = useState(false);
     return (
         <>
             <Tour></Tour>
@@ -34,6 +36,7 @@ const Lesson1_2 = () => {
                 </div>
                 <div>LOGIN</div>
             </div>
+            <TipButton content={"SF6!"} />
         </>
     );
 };
