@@ -38,7 +38,7 @@ const PlayChess = ({ boardposition, boardOrientation }) => {
         <div className="flex flex-col justify-center items-center">
             <Chessboard
                 id="chessboard"
-                boardWidth={760}
+                boardWidth={650}
                 position={game.fen()} // Dont touch it!!! If you want a specific position, pass it to props in FEN
                 onPieceDrop={onDrop}
                 boardOrientation={boardOrientation}
