@@ -2,7 +2,7 @@ import React, { useState, Component, useEffect } from "react";
 import "../index.scss";
 import { Chess } from "chess.js";
 import { Chessboard } from "react-chessboard";
-import { Lessons } from "./Lessons";
+import { Lesson1_1 } from "../pages/lessons/Lesson1_1";
 import { Home } from "../pages/home";
 
 const PlayChess = ({ boardposition, boardOrientation }) => {
@@ -37,6 +37,7 @@ const PlayChess = ({ boardposition, boardOrientation }) => {
     return (
         <div className="flex flex-col justify-center items-center">
             <Chessboard
+                id="chessboard"
                 boardWidth={760}
                 position={game.fen()} // Dont touch it!!! If you want a specific position, pass it to props in FEN
                 onPieceDrop={onDrop}
