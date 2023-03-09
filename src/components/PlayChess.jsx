@@ -29,6 +29,10 @@ const PlayChess = ({ boardposition, boardOrientation }) => {
             promotion: "q", // always promote to a queen for example simplicity
         });
     };
+    const undoMove = () => {
+        game.undo();
+        setGame(new Chess(game.fen()));
+    };
 
     return (
         <div className="flex flex-col justify-center items-center">
@@ -38,6 +42,7 @@ const PlayChess = ({ boardposition, boardOrientation }) => {
                 onPieceDrop={onDrop}
                 boardOrientation={boardOrientation}
             />
+            <button onClick={() => undoMove()}>Cofnij ruch</button>
         </div>
     );
 };
