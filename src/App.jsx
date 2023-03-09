@@ -9,6 +9,7 @@ import { FAQ } from "./pages/FAQ";
 import { AboutMe } from "./pages/AbouteMe";
 import { OpenBoard } from "./pages/OpenBoard";
 import { Lesson1_1 } from "./pages/lessons/Lesson1_1";
+import { Lesson1_2 } from "./pages/lessons/Lesson1_2";
 
 const App = () => {
     return (
@@ -35,6 +36,7 @@ const App = () => {
                 <Route path="AboutMe" element={<AboutMe />}></Route>
                 <Route path="OpenBoard" element={<OpenBoard />}></Route>
                 <Route path="Lesson1_1" element={<Lesson1_1 />} />
+                <Route path="Lesson1_2" element={<Lesson1_2 />} />
             </Routes>
         </>
     );

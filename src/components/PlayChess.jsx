@@ -43,7 +43,6 @@ const PlayChess = ({ boardposition, boardOrientation }) => {
                 onPieceDrop={onDrop}
                 boardOrientation={boardOrientation}
             />
-            <button onClick={() => undoMove()}>Cofnij ruch</button>
         </div>
     );
 };

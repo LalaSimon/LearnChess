@@ -11,7 +11,7 @@ import { LessonsList } from "../components/LessonsList";
 const Home = () => {
     return (
         <>
-            <div className="flex gap-44 justify-center items-center mt-96">
+            <div className="flex gap-44 justify-center items-center mt-96 mb-96">
                 <LessonsList></LessonsList>
                 <PlayChess></PlayChess>
                 <div>LOGIN</div>

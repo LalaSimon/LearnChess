@@ -9,6 +9,7 @@ const OpenBoard = () => {
         <>
             <h1>OpenBoard</h1>
             <PlayChess></PlayChess>
+            <button onClick={() => undoMove()}>Cofnij ruch</button>
         </>
     );
 };

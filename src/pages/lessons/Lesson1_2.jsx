@@ -7,9 +7,9 @@ import { Chessboard } from "react-chessboard";
 import { PlayChess } from "../../components/PlayChess";
 import { Route, Routes, Link } from "react-router-dom";
 import { LessonsList } from "../../components/LessonsList";
-import { Tour } from "../tours/Tour1_1";
+import { Tour } from "../tours/Tour1_2";
 
-const Lesson1_1 = () => {
+const Lesson1_2 = () => {
     const [position, setPosition] = useState();
     const changePosition = (boardposition) => {
         setPosition(boardposition);
@@ -38,4 +38,4 @@ const Lesson1_1 = () => {
     );
 };
 
-export { Lesson1_1 };
+export { Lesson1_2 };
