@@ -8,6 +8,7 @@ import { Route, Routes, Link } from "react-router-dom";
 import { FAQ } from "./pages/FAQ";
 import { AboutMe } from "./pages/AbouteMe";
 import { OpenBoard } from "./pages/OpenBoard";
+import { Lesson1_1 } from "./pages/lessons/Lesson1_1";
 
 const App = () => {
     return (
@@ -30,12 +31,13 @@ const App = () => {
             </nav>
             <Routes>
                 <Route path="/" element={<Home />}></Route>
-                <Route path="/FAQ" element={<FAQ />}></Route>
-                <Route path="/AboutMe" element={<AboutMe />}></Route>
-                <Route path="/OpenBoard" element={<OpenBoard />}></Route>
+                <Route path="FAQ" element={<FAQ />}></Route>
+                <Route path="AboutMe" element={<AboutMe />}></Route>
+                <Route path="OpenBoard" element={<OpenBoard />}></Route>
+                <Route path="Lesson1_1" element={<Lesson1_1 />} />
             </Routes>
         </>
-    ); // pass props called boardposition = {"STRING"} in FEN format to load position you want
+    );
 };
 
 export { App, PlayChess };
