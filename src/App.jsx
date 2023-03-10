@@ -14,7 +14,7 @@ import { Lesson1_2 } from "./pages/lessons/Lesson1_2";
 const App = () => {
     return (
         <>
-            <nav className="w-auto h-24 bg-red-500 flex justify-between items-center ">
+            <nav className="w-auto h-24 bg-blue-400 flex justify-between items-center text-white font-bold text-lg ">
                 <span className="ml-16">
                     <Link to="/">LearnChess</Link>
                 </span>
