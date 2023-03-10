@@ -8,8 +8,10 @@ const OpenBoard = () => {
     return (
         <>
             <h1>OpenBoard</h1>
-            <PlayChess></PlayChess>
-            <button onClick={() => undoMove()}>Cofnij ruch</button>
+            <div className="websiteBody flex flex-col justify-center items-center">
+                <PlayChess></PlayChess>
+                <button onClick={() => undoMove()}>Cofnij ruch</button>
+            </div>
         </>
     );
 };

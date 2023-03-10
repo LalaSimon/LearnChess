@@ -1,11 +1,11 @@
 import React from "react";
-import { LogIn } from "./LogIn";
+import { SignIn } from "./SignIn";
 import { SignUp } from "./SignUp";
 
 const FormLog = () => {
     return (
         <div className="flex flex-col gap-10">
-            <LogIn></LogIn>
+            <SignIn></SignIn>
             <SignUp></SignUp>
         </div>
     );

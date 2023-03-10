@@ -23,7 +23,6 @@ const Lesson1_1 = () => {
         <>
             <Tour></Tour>
             <div className="flex gap-44 justify-center items-center mt-32">
-                <LessonsList></LessonsList>
                 <div className="szachownica">
                     <PlayChess
                         boardposition={
@@ -32,7 +31,6 @@ const Lesson1_1 = () => {
                         boardOrientation={"white"}
                     ></PlayChess>
                 </div>
-                <div>LOGIN</div>
             </div>
         </>
     );

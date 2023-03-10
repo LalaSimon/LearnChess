@@ -8,7 +8,7 @@ import { PlayChess } from "../../components/PlayChess";
 import { Route, Routes, Link } from "react-router-dom";
 import { LessonsList } from "../../components/LessonsList";
 import { Tour } from "../tours/Tour1_2";
-import { TipButton } from "../../components/tipButton";
+import { TipButton } from "../../components/TipButton";
 
 const Lesson1_2 = () => {
     const [position, setPosition] = useState();
@@ -25,7 +25,6 @@ const Lesson1_2 = () => {
         <>
             <Tour></Tour>
             <div className="flex gap-44 justify-center items-center mt-32">
-                <LessonsList></LessonsList>
                 <div className="szachownica">
                     <PlayChess
                         boardposition={
@@ -33,10 +32,9 @@ const Lesson1_2 = () => {
                         }
                         boardOrientation={"white"}
                     ></PlayChess>
-                </div>
-                <div>LOGIN</div>
+                    <TipButton content={"SF6!"} />
+                </div>{" "}
             </div>
-            <TipButton content={"SF6!"} />
         </>
     );
 };

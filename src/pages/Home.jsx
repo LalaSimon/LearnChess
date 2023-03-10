@@ -5,7 +5,7 @@ import { Chessboard } from "react-chessboard";
 import { PlayChess } from "../components/PlayChess";
 import { Lesson1_1 } from "./lessons/Lesson1_1";
 import Joyride from "react-joyride";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes, Link, Outlet } from "react-router-dom";
 import { LessonsList } from "../components/LessonsList";
 import { FormLog } from "../components/loginRegisterForm";
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
         <>
             <div className="websiteBody flex justify-center items-center gap-24">
                 <LessonsList></LessonsList>
-                <PlayChess></PlayChess>
+                <Outlet></Outlet>
                 <FormLog></FormLog>
             </div>
         </>
