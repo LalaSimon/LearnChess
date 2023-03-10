@@ -8,9 +8,9 @@ const SignIn = () => {
         >
             <span className="text-center text-xl"> SIGN IN</span>
             <input
-                type="login"
+                type="email"
                 className="border-solid border-b-2 border-b-blue-400 p-2 flex justify-center text-center text-xl rounded-md focus:outline-none"
-                placeholder="login"
+                placeholder="email"
             ></input>
             <input
                 type="password"
