@@ -41,11 +41,13 @@ const PlayChess = ({ boardposition, boardOrientation }) => {
         if (width < 640) {
             value = 350;
         } else if (width < 768) {
-            value = 400;
-        } else if (width >= 768 && width < 1024) {
             value = 450;
+        } else if (width >= 768 && width < 1024) {
+            value = 550;
+        } else if (width >= 1024 && width < 1280) {
+            value = 650;
         } else {
-            value = 500;
+            value = 750;
         }
 
         return value;
