@@ -10,7 +10,9 @@ import { Route, Routes, Link } from "react-router-dom";
 
 const LessonsList = () => {
     const [toggleFirst, setToggleFirst] = useState(false);
+
     const [toggleSecond, setToggleSecond] = useState(false);
+
     return (
         <ul className="flex gap-4 flex-col">
             <div
@@ -30,6 +32,7 @@ const LessonsList = () => {
                     </li>
                 </ul>
             )}
+
             <div
                 className="cursor-pointer"
                 onClick={() => setToggleSecond(!toggleSecond)}

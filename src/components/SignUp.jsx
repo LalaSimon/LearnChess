@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import supabase from "../services/supabase";
 import { Toast } from "primereact/toast";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
     const toast = useRef(null);
@@ -13,6 +14,7 @@ const SignUp = () => {
             life: 3000,
         });
     };
+
     const showError = (msg) => {
         toast.current.show({
             severity: "error",
@@ -32,16 +34,24 @@ const SignUp = () => {
         } else if (formElement[2].value !== formElement[3].value) {
             showError("The passwords must be the same");
             return;
-        } else if (formElement[2].value.length < 6) {
-            showError("Password need atleast 6 characters");
-            return;
-        } else {
-            showSuccess("Congratulations, you can sign in now!");
         }
         let { data, error } = await supabase.auth.signUp({
             email: formElement[0].value,
             password: formElement[2].value,
         });
+
+        if (data.user) {
+            showSuccess(
+                "Congratulations, you can sign in now. Page will refresh automaticlly in 3 seconds"
+            );
+
+            setTimeout(() => {
+                document.location.reload(true);
+            }, 3000);
+        }
+        if (error) {
+            showError(error.message);
+        }
     };
 
     return (
