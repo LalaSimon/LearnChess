@@ -44,7 +44,7 @@ const SignUp = () => {
             showSuccess(
                 "Congratulations, you can sign in now. Page will refresh automaticlly in 3 seconds"
             );
-
+            localStorage.setItem("progress", "0");
             setTimeout(() => {
                 navigate("/");
                 document.location.reload(true);

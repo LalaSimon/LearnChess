@@ -24,7 +24,7 @@ const LessonsList = () => {
 
             {toggleFirst && (
                 <ul>
-                    <li>
+                    <li className={isDone ? backgroundColor : "bg-green-400"}>
                         <Link to="/Lesson1_1"> Lekcja 1</Link>
                     </li>
                     <li>
@@ -43,10 +43,10 @@ const LessonsList = () => {
             {toggleSecond && (
                 <ul>
                     <li>
-                        <Link to="/Lesson1_1"> Lekcja 1</Link>
+                        <Link> Lekcja 1</Link>
                     </li>
                     <li>
-                        <Link to="/Lesson1_2"> Lekcja 2</Link>
+                        <Link> Lekcja 2</Link>
                     </li>
                 </ul>
             )}
