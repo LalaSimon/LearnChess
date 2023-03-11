@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Line } from "rc-progress";
+import useLocalStorageState from "use-local-storage-state";
 
 const ProgressBar = () => {
-    const [percent, setPercent] = useState("progress", 0);
+    const [percent, setPercent] = useLocalStorageState("progress", 0);
 
     useEffect(() => {
-        console.log(localStorage.getItem("progress"));
-        setPercent(localStorage.getItem("progress"));
-    }, [percent]);
+        const progress = parseInt(localStorage.getItem("progress")) || 0;
+        setPercent(progress);
+    }, [setPercent]);
 
     return (
         <>
