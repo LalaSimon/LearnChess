@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
     const toast = useRef(null);
-
+    const navigate = useNavigate();
     const showSuccess = (msg) => {
         toast.current.show({
             severity: "success",
@@ -46,6 +46,7 @@ const SignUp = () => {
             );
 
             setTimeout(() => {
+                navigate("/");
                 document.location.reload(true);
             }, 3000);
         }
