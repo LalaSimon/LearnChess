@@ -8,8 +8,10 @@ import { PlayChess } from "../../components/PlayChess";
 import { Route, Routes, Link } from "react-router-dom";
 import { LessonsList } from "../../components/LessonsList";
 import { Tour } from "../tours/Tour1_1";
+import { DoneButton } from "../../components/DoneButton";
+import { TipButton } from "../../components/TipButton";
 
-const Lesson1_1 = () => {
+const Lesson1_1 = ({ isDone }) => {
     const [position, setPosition] = useState();
     const changePosition = (boardposition) => {
         setPosition(boardposition);
@@ -20,22 +22,6 @@ const Lesson1_1 = () => {
         setBoardOrientantion(boardOrientation);
     };
 
-    const [isDone, setIsDone] = useState(false);
-    const handleClick = () => {
-        if (isDone === false) {
-            setIsDone(true);
-            localStorage.setItem(
-                "progress",
-                +localStorage.getItem("progress") + 10
-            );
-        } else {
-            setIsDone(false);
-            localStorage.setItem(
-                "progress",
-                +localStorage.getItem("progress") - 10
-            );
-        }
-    };
     return (
         <>
             <Tour></Tour>
@@ -47,12 +33,14 @@ const Lesson1_1 = () => {
                         }
                         boardOrientation={"white"}
                     ></PlayChess>
-                    <button
-                        onClick={handleClick}
-                        className="mt-10 mr-8 self-end"
-                    >
-                        Lesson done
-                    </button>
+                    <div className="flex justify-center gap-40 mt-10">
+                        <TipButton content={"NF6"}></TipButton>
+                        <DoneButton
+                            lessonId="lesson1_1"
+                            className="ml-10"
+                            isDone={isDone}
+                        ></DoneButton>
+                    </div>
                 </div>
             </div>
         </>
