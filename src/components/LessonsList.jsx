@@ -7,50 +7,54 @@ import { Lesson1_1 } from "../pages/lessons/Lesson1_1";
 import { Lesson1_2 } from "../pages/lessons/Lesson1_2";
 import Joyride from "react-joyride";
 import { Route, Routes, Link } from "react-router-dom";
+import { DoneButton } from "./DoneButton";
 
-const LessonsList = () => {
+const LessonsList = ({ isDone }) => {
     const [toggleFirst, setToggleFirst] = useState(false);
 
     const [toggleSecond, setToggleSecond] = useState(false);
 
     return (
-        <ul className="flex gap-4 flex-col">
-            <div
-                className="cursor-pointer"
-                onClick={() => setToggleFirst(!toggleFirst)}
-            >
-                Rozdzial 1
-            </div>
+        <>
+            <ul className="flex gap-4 flex-col">
+                <div
+                    className="cursor-pointer"
+                    onClick={() => setToggleFirst(!toggleFirst)}
+                >
+                    Rozdzial 1
+                </div>
 
-            {toggleFirst && (
-                <ul>
-                    <li className={isDone ? backgroundColor : "bg-green-400"}>
-                        <Link to="/Lesson1_1"> Lekcja 1</Link>
-                    </li>
-                    <li>
-                        <Link to="/Lesson1_2"> Lekcja 2</Link>
-                    </li>
-                </ul>
-            )}
+                {toggleFirst && (
+                    <ul>
+                        <li>
+                            {" "}
+                            <Link to="/Lesson1_1"> Lekcja 1</Link>
+                        </li>
+                        <li>
+                            <Link to="/Lesson1_2"> Lekcja 2</Link>
+                        </li>
+                    </ul>
+                )}
 
-            <div
-                className="cursor-pointer"
-                onClick={() => setToggleSecond(!toggleSecond)}
-            >
-                Rozdzial 2
-            </div>
+                <div
+                    className="cursor-pointer"
+                    onClick={() => setToggleSecond(!toggleSecond)}
+                >
+                    Rozdzial 2
+                </div>
 
-            {toggleSecond && (
-                <ul>
-                    <li>
-                        <Link> Lekcja 1</Link>
-                    </li>
-                    <li>
-                        <Link> Lekcja 2</Link>
-                    </li>
-                </ul>
-            )}
-        </ul>
+                {toggleSecond && (
+                    <ul>
+                        <li>
+                            <Link> Lekcja 1</Link>
+                        </li>
+                        <li>
+                            <Link> Lekcja 2</Link>
+                        </li>
+                    </ul>
+                )}
+            </ul>
+        </>
     );
 };
 

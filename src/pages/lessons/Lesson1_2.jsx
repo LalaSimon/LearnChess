@@ -8,9 +8,10 @@ import { PlayChess } from "../../components/PlayChess";
 import { Route, Routes, Link } from "react-router-dom";
 import { LessonsList } from "../../components/LessonsList";
 import { Tour } from "../tours/Tour1_2";
+import { DoneButton } from "../../components/DoneButton";
 import { TipButton } from "../../components/TipButton";
 
-const Lesson1_2 = () => {
+const Lesson1_2 = ({ isDone }) => {
     const [position, setPosition] = useState();
     const changePosition = (boardposition) => {
         setPosition(boardposition);
@@ -25,15 +26,22 @@ const Lesson1_2 = () => {
         <>
             <Tour></Tour>
             <div className="flex gap-44 justify-center items-center mt-32">
-                <div className="szachownica">
+                <div className="szachownica flex flex-col">
                     <PlayChess
                         boardposition={
                             "2rnr2k/ppq1p1bp/8/6Bp/3pN3/1BP5/P3QPP1/4R1K1 w - - 0 22"
                         }
                         boardOrientation={"white"}
                     ></PlayChess>
-                    <TipButton content={"SF6!"} />
-                </div>{" "}
+                    <div className="flex justify-center gap-40 mt-10">
+                        <TipButton content={"SF6"}></TipButton>
+                        <DoneButton
+                            lessonId="lesson1_2"
+                            className="ml-10"
+                            isDone={isDone}
+                        ></DoneButton>
+                    </div>
+                </div>
             </div>
         </>
     );
