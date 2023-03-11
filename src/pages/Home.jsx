@@ -8,13 +8,18 @@ import Joyride from "react-joyride";
 import { Route, Routes, Link, Outlet } from "react-router-dom";
 import { LessonsList } from "../components/LessonsList";
 import { FormLog } from "../components/loginRegisterForm";
+import { UserProfile } from "../components/UserProfile";
 const Home = () => {
     return (
         <>
             <div className="websiteBody flex justify-center items-center gap-24">
                 <LessonsList></LessonsList>
                 <Outlet></Outlet>
-                <FormLog></FormLog>
+                {localStorage.getItem("userData") !== null ? (
+                    <UserProfile></UserProfile>
+                ) : (
+                    <FormLog></FormLog>
+                )}
             </div>
         </>
     );
