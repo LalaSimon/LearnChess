@@ -8,12 +8,22 @@ import { Lesson1_2 } from "../pages/lessons/Lesson1_2";
 import Joyride from "react-joyride";
 import { Route, Routes, Link } from "react-router-dom";
 import { DoneButton } from "./DoneButton";
+import useLocalStorageState from "use-local-storage-state";
 
-const LessonsList = ({ isDone }) => {
+const LessonsList = () => {
     const [toggleFirst, setToggleFirst] = useState(false);
 
     const [toggleSecond, setToggleSecond] = useState(false);
 
+    const [green1_1Color, greenSetColor1_1] = useLocalStorageState(
+        "green1_1",
+        0
+    );
+
+    useEffect(() => {
+        const greenColor1_1 = parseInt(localStorage.getItem("green1_1")) || 0;
+        greenSetColor1_1(green1_1Color);
+    }, [greenSetColor1_1]);
     return (
         <>
             <ul className="flex gap-4 flex-col">
@@ -26,7 +36,11 @@ const LessonsList = ({ isDone }) => {
 
                 {toggleFirst && (
                     <ul>
-                        <li>
+                        <li
+                            className={
+                                green1_1Color > 0 ? "bg-green-500" : "white"
+                            }
+                        >
                             {" "}
                             <Link to="/Lesson1_1"> Lekcja 1</Link>
                         </li>
