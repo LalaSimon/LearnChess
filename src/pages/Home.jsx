@@ -7,12 +7,14 @@ import { UserProfile } from "../components/UserProfile";
 const Home = () => {
     return (
         <>
-            <div>Intrudaction</div>
-            <div className="websiteBody flex justify-center items-center gap-24">
+            <div
+                className="websiteBody flex justify-center items-center gap-44
+            "
+            >
                 <LessonsList></LessonsList>
-                <Outlet></Outlet>
+                <Outlet className="flex-1"></Outlet>
                 {localStorage.getItem("userData") !== null ? (
-                    <UserProfile></UserProfile>
+                    <UserProfile className="ml-40"></UserProfile>
                 ) : (
                     <FormLog></FormLog>
                 )}

@@ -73,8 +73,8 @@ const PlayChessVSRandom = ({ boardposition, boardOrientation, user }) => {
                 position={game.fen()} // Dont touch it!!! If you want a specific position, pass it to props in FEN
                 onPieceDrop={onDrop}
                 boardOrientation={boardOrientation}
-                customDarkSquareStyle={{ backgroundColor: "#FBC403" }}
-                customLightSquareStyle={{ backgroundColor: "#FFF" }}
+                customDarkSquareStyle={{ backgroundColor: "#713f12" }}
+                customLightSquareStyle={{ backgroundColor: "#A57548" }}
             />
         </div>
     );

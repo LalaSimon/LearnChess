@@ -50,15 +50,14 @@ const PlayChess = ({ boardposition, boardOrientation }) => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center border-2 border-solid border-black-500">
+        <div className="chessboard flex flex-col justify-center items-center border-2 border-solid border-black-500">
             <Chessboard
-                id="chessboard"
                 boardWidth={checkWidth()}
                 position={game.fen()} // Dont touch it!!! If you want a specific position, pass it to props in FEN
                 onPieceDrop={onDrop}
                 boardOrientation={boardOrientation}
-                customDarkSquareStyle={{ backgroundColor: "#FBC403" }}
-                customLightSquareStyle={{ backgroundColor: "#FFF" }}
+                customDarkSquareStyle={{ backgroundColor: "#713f12" }}
+                customLightSquareStyle={{ backgroundColor: "#A57548" }}
             />
         </div>
     );

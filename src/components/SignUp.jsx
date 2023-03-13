@@ -60,33 +60,33 @@ const SignUp = () => {
             <Toast ref={toast} />
             <form
                 type="submit"
-                className="flex flex-col gap-8 border-solid border-2 border-gray-300 p-8 rounded-md"
+                className="flex flex-col gap-8 border-solid border-2 border-yellow-900 p-8 rounded-md"
                 onSubmit={handleSignUp}
             >
                 <span className="text-center text-xl">SIGN UP</span>
                 <input
                     type="email"
-                    className="border-solid border-b-2 border-b-blue-400 p-2 flex justify-center text-center text-xl rounded-md focus:outline-none"
+                    className="border-solid border-b-2 border-b-yellow-900 opacity-50 p-2 flex justify-center text-center text-xl rounded-md focus:outline-none"
                     placeholder="email"
                 ></input>
                 <input
                     type="email"
-                    className="border-solid border-b-2 border-b-blue-400 p-2 flex justify-center text-center text-xl rounded-md focus:outline-none"
+                    className="border-solid border-b-2 border-b-yellow-900 opacity-50 p-2 flex justify-center text-center text-xl rounded-md focus:outline-none"
                     placeholder="repeat email"
                 ></input>
                 <input
                     type="password"
-                    className="border-solid border-b-2 border-b-blue-400 p-2 flex justify-center text-center text-xl rounded-md focus:outline-none"
+                    className="border-solid border-b-2 border-b-yellow-900 opacity-50 p-2 flex justify-center text-center text-xl rounded-md focus:outline-none"
                     placeholder="password"
                 ></input>
                 <input
                     type="password"
-                    className="border-solid border-b-2 border-b-blue-400 p-2 flex justify-center text-center text-xl rounded-md focus:outline-none"
+                    className="border-solid border-b-2 border-b-yellow-900 opacity-50 p-2 flex justify-center text-center text-xl rounded-md focus:outline-none"
                     placeholder="repeat password"
                 ></input>
 
                 <button
-                    className="bg-blue-400 text-white p-1 flex justify-center text-center text-xl rounded-md focus:outline-none p-button-success"
+                    className="bg-yellow-900 opacity-50 text-white p-3 flex justify-center text-center text-xl focus:outline-none duration-300 rounded-xl hover:bg-yellow-700 hover:opacity-100 scale-100 hover:scale-110"
                     type="submit"
                     label="Success"
                 >

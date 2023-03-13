@@ -5,23 +5,16 @@ const TOUR_STEPS = [
     {
         disableBeacon: true,
         placement: "auto",
-        target: ".szachownica",
+        target: ".chessboard",
         content:
-            "Now we will have fun with rooks. As you can see we have two of them. Do you remember how we can move them? Try to capture all of whites pawns.",
+            "Queen like we said before can be moved like rook and bishop combined. Thats making her the strongest piece in chess. Being placed properly can paralyze opponent position. Try to capture all black pieces",
     },
     {
         disableBeacon: true,
         placement: "auto",
-        target: ".szachownica",
+        target: ".chessboard",
         content:
-            "Oh, small change right now. White pieces are from know moved by computer. Dont focus on checkmating enemy king. We will get there :) Get pawns.",
-    },
-    {
-        disableBeacon: true,
-        placement: "auto",
-        target: ".szachownica",
-        content:
-            "If computer stopped making moves that means you checkmated him (or he checkmated you, which i hope didnt happend : D)",
+            "Quick tip: try to make your queen position better by forcing your opponents to move his king by giving him check first (start with Queen to D4 move)",
     },
 ];
 

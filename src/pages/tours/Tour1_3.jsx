@@ -3,7 +3,6 @@ import JoyRide from "react-joyride";
 
 const TOUR_STEPS = [
     {
-        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
         target: ".szachownica",
@@ -11,7 +10,6 @@ const TOUR_STEPS = [
             "In chess mostly games are played under time control. We have fast games, called blitz (3-5 minutes) and bullets (1-2 minutes), then a bit longer like rapids (10-30 minutes) and classical games (30 minutes+)",
     },
     {
-        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
         target: ".szachownica",
@@ -19,7 +17,6 @@ const TOUR_STEPS = [
             "According to official rules, every chess game have to start with hands shake",
     },
     {
-        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
         target: ".szachownica",
@@ -27,7 +24,6 @@ const TOUR_STEPS = [
             "Chess ale so popular because everyone is equal and there are no luck, also chess should bring you fun and pleasure. So please dont try cheating using chess engines.",
     },
     {
-        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
         target: ".szachownica",

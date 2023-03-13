@@ -7,21 +7,7 @@ const TOUR_STEPS = [
         placement: "auto",
         target: ".szachownica",
         content:
-            "Now we will have fun with rooks. As you can see we have two of them. Do you remember how we can move them? Try to capture all of whites pawns.",
-    },
-    {
-        disableBeacon: true,
-        placement: "auto",
-        target: ".szachownica",
-        content:
-            "Oh, small change right now. White pieces are from know moved by computer. Dont focus on checkmating enemy king. We will get there :) Get pawns.",
-    },
-    {
-        disableBeacon: true,
-        placement: "auto",
-        target: ".szachownica",
-        content:
-            "If computer stopped making moves that means you checkmated him (or he checkmated you, which i hope didnt happend : D)",
+            "So, look at position, i like compare bishops to snipers, they can wait really long time from far away and then hit in proper time through whole chessboard. Try to to capture all pawns.",
     },
 ];
 
