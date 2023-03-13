@@ -4,7 +4,7 @@ import { SignUp } from "./SignUp";
 
 const FormLog = () => {
     return (
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-16">
             <SignIn></SignIn>
             <SignUp></SignUp>
         </div>

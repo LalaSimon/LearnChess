@@ -3,7 +3,6 @@ import JoyRide from "react-joyride";
 
 const TOUR_STEPS = [
     {
-        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
         target: ".szachownica",
@@ -11,7 +10,6 @@ const TOUR_STEPS = [
             "Now we will take a look at hors... knight. So like we said before, he can be moved in symbol of L letter, but what does it mean?",
     },
     {
-        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
         target: ".szachownica",
@@ -19,7 +17,6 @@ const TOUR_STEPS = [
             "Our knight being at E4 can be moved to: C3, C5, D6, D, E6, F6, G5, G3, F2. Which means he also attack the same squares. Knight can be very dangerous because he can attack multiple squares at the same time.",
     },
     {
-        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
         target: ".szachownica",
@@ -27,7 +24,6 @@ const TOUR_STEPS = [
             "So, if our knight, can attack multiple squares at the same time, that means he can also give a check (attack on king, opponent is forced in next move to make safe king) and attack another piece?",
     },
     {
-        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
         target: ".szachownica",
