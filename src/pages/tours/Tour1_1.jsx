@@ -2,16 +2,73 @@ import React from "react";
 import JoyRide from "react-joyride";
 
 const TOUR_STEPS = [
-    { disableBeacon: true, target: ".szachownica", content: "Szachownica" },
-    { disableBeacon: true, target: ".szachownica", content: "Szachownica" },
-    { disableBeacon: true, target: ".szachownica", content: "Szachownica" },
-    { disableBeacon: true, target: ".szachownica", content: "Szachownica" },
+    {
+        disableOverlay: true,
+        disableBeacon: true,
+        placement: "left",
+        target: ".szachownica",
+        content:
+            "So, this is chessboard with all pieces on. We can see that there are two colors of those. Whats the difference beetwen them? Whites always start first. We can move pieces by draging them from one spot to and droping to another",
+    },
+    {
+        disableOverlay: true,
+        disableBeacon: true,
+        placement: "auto",
+        target: ".szachownica",
+        content:
+            "What you see now is starting position, from which we are always start the game with white piece move.",
+    },
+    {
+        disableOverlay: true,
+        placement: "auto",
+        disableBeacon: true,
+        target: ".szachownica",
+        content:
+            "We have 64 squares that our pieces can stand. As we can see there are some numbers and letters at chessboard. Those are coordinates (notation), every square have his unique coordinate. ",
+    },
+    {
+        disableOverlay: true,
+        placement: "auto",
+        disableBeacon: true,
+        target: ".szachownica",
+        content:
+            "Its important to remember all of them, we will use them during lessons to help you learn them faster. You can always look at the chessboard if you dont remember which square is called D5 or F4 :)",
+    },
+    {
+        disableOverlay: true,
+        placement: "auto",
+        disableBeacon: true,
+        target: ".szachownica",
+        content:
+            "We always place whites pieces on first and second line, blacks on seventh and eight (if you dont have coordinates look if first square at first line (A1 square) is black for white pieces, then you know chessboard is good oriented.)",
+    },
+    {
+        disableOverlay: true,
+        placement: "auto",
+        disableBeacon: true,
+        target: ".szachownica",
+        content:
+            "Look at E1 and E8, those are kings. The main goal in chess is to make opponent king being attacked with no legal moves left to make him safe (not being attacked) - its called checkmate which end the game.",
+    },
 ];
 
 const Tour = () => {
     return (
         <div>
-            <JoyRide showProgress={true} steps={TOUR_STEPS} continuous={true} />
+            <JoyRide
+                steps={TOUR_STEPS}
+                continuous={true}
+                styles={{
+                    options: {
+                        position: "absolute",
+                        arrowColor: "#FFDD03",
+                        backgroundColor: "#FFDD03",
+                        primaryColor: "#0A0A0A",
+                        textColor: "#0A0A0A",
+                        width: 400,
+                    },
+                }}
+            />
         </div>
     );
 };

@@ -1,17 +1,13 @@
-import React, { useState, useEffect, Component } from "react";
+import React from "react";
 import "../index.scss";
-import { Chess } from "chess.js";
-import { Chessboard } from "react-chessboard";
-import { PlayChess } from "../components/PlayChess";
-import { Lesson1_1 } from "./lessons/Lesson1_1";
-import Joyride from "react-joyride";
-import { Route, Routes, Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { LessonsList } from "../components/LessonsList";
 import { FormLog } from "../components/loginRegisterForm";
 import { UserProfile } from "../components/UserProfile";
 const Home = () => {
     return (
         <>
+            <div>Intrudaction</div>
             <div className="websiteBody flex justify-center items-center gap-24">
                 <LessonsList></LessonsList>
                 <Outlet></Outlet>
