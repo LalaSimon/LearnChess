@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Line } from "rc-progress";
 import useLocalStorageState from "use-local-storage-state";
 
@@ -13,7 +13,21 @@ const ProgressBar = () => {
     return (
         <>
             <span className="mt-4">Your progress</span>
-            <Line percent={percent} strokeWidth={4} strokeColor={"#60a5fa"} />
+            <Line
+                percent={percent}
+                strokeWidth={4}
+                strokeColor={
+                    percent < 20
+                        ? "red"
+                        : percent < 40
+                        ? "orange"
+                        : percent < 60
+                        ? "yellow"
+                        : percent < 80
+                        ? "green"
+                        : "lightblue"
+                }
+            />
         </>
     );
 };

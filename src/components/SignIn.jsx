@@ -7,15 +7,6 @@ const SignIn = () => {
     const navigate = useNavigate();
     const toast = useRef(null);
 
-    const showSuccess = (msg) => {
-        toast.current.show({
-            severity: "success",
-            summary: "Success",
-            detail: msg,
-            life: 3000,
-        });
-    };
-
     const showError = (msg) => {
         toast.current.show({
             severity: "error",

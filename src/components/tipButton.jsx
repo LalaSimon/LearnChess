@@ -8,7 +8,9 @@ const TipButton = ({ content }) => {
                 Click for hint
             </button>
             {toggleTipButton && (
-                <strong className="absolute top-8">{content}</strong>
+                <div className="absolute top-8 w-96 text-center">
+                    <strong>{content}</strong>
+                </div>
             )}
         </div>
     );

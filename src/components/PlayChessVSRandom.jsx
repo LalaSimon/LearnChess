@@ -4,7 +4,7 @@ import { Chess } from "chess.js";
 import { Chessboard } from "react-chessboard";
 import { useWindowSize } from "react-use";
 
-const PlayChess = ({ boardposition, boardOrientation }) => {
+const PlayChessVSRandom = ({ boardposition, boardOrientation, user }) => {
     // You have to pass FEN in string to a props boardposition. If you dont passs the boardposition it will get starting position as default
     const [game, setGame] = useState(
         boardposition ? new Chess(boardposition) : new Chess()
@@ -18,8 +18,23 @@ const PlayChess = ({ boardposition, boardOrientation }) => {
         const gameCopy = { ...game };
         const result = gameCopy.move(move);
         setGame(gameCopy);
-        return result; // null if the move was illegal, the move object if the move was legal
+        if (result === null) {
+            return false;
+        } else {
+            if (gameCopy.turn() !== user) {
+                setTimeout(makeRandomMove, 200);
+            }
+            return true;
+        }
     };
+
+    function makeRandomMove() {
+        const possibleMoves = game.moves();
+        if (game.game_over() || game.in_draw() || possibleMoves.length === 0)
+            return; // exit if the game is over
+        const randomIndex = Math.floor(Math.random() * possibleMoves.length);
+        makeAMove(possibleMoves[randomIndex]);
+    }
 
     const onDrop = (sourceSquare, targetSquare) => {
         const move = makeAMove({
@@ -28,6 +43,7 @@ const PlayChess = ({ boardposition, boardOrientation }) => {
             promotion: "q", // always promote to a queen for example simplicity
         });
     };
+
     const undoMove = () => {
         game.undo();
         setGame(new Chess(game.fen()));
@@ -64,4 +80,4 @@ const PlayChess = ({ boardposition, boardOrientation }) => {
     );
 };
 
-export { PlayChess };
+export { PlayChessVSRandom };

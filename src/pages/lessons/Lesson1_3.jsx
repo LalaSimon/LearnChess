@@ -2,8 +2,8 @@ import React from "react";
 import "../../index.scss";
 import { PlayChess } from "../../components/PlayChess";
 import { DoneButton } from "../../components/DoneButton";
-import { Tour } from "../tours/Tour1_2";
-const Lesson1_2 = ({ isDone }) => {
+import { Tour } from "../tours/Tour1_3";
+const Lesson1_3 = ({ isDone }) => {
     return (
         <>
             <Tour></Tour>
@@ -12,7 +12,7 @@ const Lesson1_2 = ({ isDone }) => {
                     <PlayChess boardOrientation={"white"}></PlayChess>
                     <div className="flex justify-center gap-40 mt-10">
                         <DoneButton
-                            lessonId="lesson1_2"
+                            lessonId="lesson1_3"
                             className="ml-10"
                             isDone={isDone}
                         ></DoneButton>
@@ -23,4 +23,4 @@ const Lesson1_2 = ({ isDone }) => {
     );
 };
 
-export { Lesson1_2 };
+export { Lesson1_3 };

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+$brownColor: #151515;
+$darkColor: #0a0a0a;
+$creamColor: #fbfcd4;
+$goldColor: #ffdd03;
+$orangeColor: #fbc403;
+
 html {
     font-size: 10px;
 }
@@ -10,6 +16,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: white;
+    overflow: hidden;
 }
 
 .websiteBody {
