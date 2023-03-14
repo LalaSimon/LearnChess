@@ -6,6 +6,7 @@ const LessonsList = () => {
     const [toggleFirst, setToggleFirst] = useState(false);
     const [toggleSecond, setToggleSecond] = useState(false);
     const [toggleThird, setToggleThird] = useState(false);
+    const [toggleFourth, setToggleFourth] = useState(false);
 
     return (
         <>
@@ -74,7 +75,6 @@ const LessonsList = () => {
                         </li>
                         <li>
                             <Link to="/Lesson3_2">
-                                {" "}
                                 Lesson 2 - Develop your pieces
                             </Link>
                         </li>
@@ -82,13 +82,28 @@ const LessonsList = () => {
                             <Link to="/Lesson3_3"> Lesson 3 - Castling</Link>
                         </li>
                         <li>
-                            <Link to="/Lesson3_4"> Lesson 4 - </Link>
+                            <Link to="/Lesson3_4">
+                                Lesson 4 - Improving position
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/Lesson3_5"> Lesson 5 - </Link>
+                            <Link to="/Lesson3_5"> Lesson 5 - Midgame</Link>
                         </li>
                         <li>
-                            <Link to="/Lesson3_6"> Lesson 6 - </Link>
+                            <Link to="/Lesson3_6"> Lesson 6 - Endgame</Link>
+                        </li>
+                    </ul>
+                )}
+                <div
+                    className="cursor-pointer"
+                    onClick={() => setToggleFourth(!toggleFourth)}
+                >
+                    Chapter 4 - Summary
+                </div>
+                {toggleFourth && (
+                    <ul>
+                        <li>
+                            <Link to="/Lesson4_1"> How to train chess? </Link>
                         </li>
                     </ul>
                 )}

@@ -20,6 +20,9 @@ import { Lesson2_6 } from "./pages/lessons/Lesson2_6";
 import { Lesson3_1 } from "./pages/lessons/Lesson3_1";
 import { Lesson3_2 } from "./pages/lessons/Lesson3_2";
 import { Lesson3_3 } from "./pages/lessons/Lesson3_3";
+import { Lesson3_4 } from "./pages/lessons/Lesson3_4";
+import { Lesson3_5 } from "./pages/lessons/Lesson3_5";
+import { Lesson3_6 } from "./pages/lessons/Lesson3_6";
 
 const App = () => {
     return (
@@ -41,6 +44,9 @@ const App = () => {
                     <Route path="Lesson3_1" element={<Lesson3_1 />} />
                     <Route path="Lesson3_2" element={<Lesson3_2 />} />
                     <Route path="Lesson3_3" element={<Lesson3_3 />} />
+                    <Route path="Lesson3_4" element={<Lesson3_4 />} />
+                    <Route path="Lesson3_5" element={<Lesson3_5 />} />
+                    <Route path="Lesson3_6" element={<Lesson3_6 />} />
                 </Route>
                 <Route path="FAQ" element={<FAQ />}></Route>
                 <Route path="AboutMe" element={<AboutMe />}></Route>
