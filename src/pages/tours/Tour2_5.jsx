@@ -7,14 +7,29 @@ const TOUR_STEPS = [
         placement: "auto",
         target: ".chessboard",
         content:
-            "Queen like we said before can be moved like rook and bishop combined. Thats making her the strongest piece in chess. Being placed properly can paralyze opponent position. Try to capture all black pieces",
+            "Do you remember how we can move our queen? Focus on position:",
     },
     {
+        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
         target: ".chessboard",
         content:
-            "Quick tip: try to make your queen position better by forcing your opponents to move his king by giving him check first (start with Queen to D4 move)",
+            "Try to capture all pawns with your queen, try to capture pieces with check (attacking opponent king) in same move",
+    },
+    {
+        disableBeacon: true,
+        placement: "auto",
+        target: `[data-square *= "d4"]`,
+        content: "Small tip: start with Queen to D4 move",
+    },
+    {
+        disableOverlay: true,
+        disableBeacon: true,
+        placement: "auto",
+        target: ".chessboard",
+        content:
+            "Try to capture all pawns, press lesson done and move into next lesson",
     },
 ];
 
@@ -26,11 +41,12 @@ const Tour = () => {
                 continuous={true}
                 styles={{
                     options: {
-                        arrowColor: "#FFDD03",
-                        backgroundColor: "#FFDD03",
-                        primaryColor: "#0A0A0A",
+                        position: "absolute",
+                        arrowColor: "#f2e3bc",
+                        backgroundColor: "#f2e3bc",
+                        primaryColor: "#713f12",
                         textColor: "#0A0A0A",
-                        width: 400,
+                        width: 350,
                     },
                 }}
             />

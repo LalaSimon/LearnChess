@@ -18,7 +18,7 @@ const UserProfile = () => {
         <>
             <div className="flex flex-col justify-center items-center gap-44">
                 <div>Intrudaction</div>
-                <div className="flex flex-col justify-center items-center border-2 border-solid border-yellow-900 p-10 gap-8">
+                <div className="userProfile flex flex-col justify-center items-center border-2 border-solid border-yellow-900 p-10 gap-8">
                     <h1>{email}</h1>
                     <ProgressBar></ProgressBar>
                     <button

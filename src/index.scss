@@ -8,6 +8,11 @@ $creamColor: #fbfcd4;
 $goldColor: #ffdd03;
 $orangeColor: #fbc403;
 
+#root {
+    width: 100%;
+    height: calc(100% - 10rem);
+}
+
 html {
     font-size: 10px;
 }
@@ -21,11 +26,8 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
-
-.websiteBody {
     width: 100vw;
-    height: calc(102vh - 10rem);
+    height: 100vh;
 }
 
 p-button {

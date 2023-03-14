@@ -8,7 +8,23 @@ const TOUR_STEPS = [
         placement: "auto",
         target: ".chessboard",
         content:
-            "In chess mostly games are played under time control. We have fast games, called blitz (3-5 minutes) and bullets (1-2 minutes), then a bit longer like rapids (10-30 minutes) and classical games (30 minutes+)",
+            "Okay, keep continue from last position. What should we do next? We have couple options",
+    },
+    {
+        disableOverlay: true,
+        disableBeacon: true,
+        placement: "auto",
+        target: `[data-square = "e1"]`,
+        content:
+            "We need to protect our king, how can we do this? Answer is castle, what is this? - Try to move king to g1",
+    },
+    {
+        disableOverlay: true,
+        disableBeacon: true,
+        placement: "auto",
+        target: `[data-square = "g1"]`,
+        content:
+            "Congratulations! Your first castle. So, castle allow us to hide king and develop rook to the game",
     },
     {
         disableOverlay: true,
@@ -16,7 +32,7 @@ const TOUR_STEPS = [
         placement: "auto",
         target: ".chessboard",
         content:
-            "According to official rules, every chess game have to start with hands shake",
+            "Castle is allowed until king and rook didnt move, there is no pieces between them and squares where king is coming to castle are not attacked",
     },
     {
         disableOverlay: true,
@@ -24,7 +40,7 @@ const TOUR_STEPS = [
         placement: "auto",
         target: ".chessboard",
         content:
-            "Chess ale so popular because everyone is equal and there are no luck, also chess should bring you fun and pleasure. So please dont try cheating using chess engines.",
+            "You can also castle to the second rook, with same rules. King always goes by two squares to rook, and rook is switching squares with king.",
     },
     {
         disableOverlay: true,
@@ -32,7 +48,7 @@ const TOUR_STEPS = [
         placement: "auto",
         target: ".chessboard",
         content:
-            "Congratulations! You first chapter is done, head please to the next one. Now we will try use our theory in practice.",
+            "Develop more pieces and do castle with black king, click lesson done and head to another lesson",
     },
 ];
 

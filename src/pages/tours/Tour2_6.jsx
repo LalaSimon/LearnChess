@@ -7,28 +7,22 @@ const TOUR_STEPS = [
         placement: "auto",
         target: ".chessboard",
         content:
-            "Now we will take a look at hors... knight. So like we said before, he can be moved in symbol of L letter, but what does it mean?",
+            "King movement is really important. In some type of position we want to attack with the king, in other trying to make him safe at all cost.",
     },
     {
+        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
-        target: `[data-square *= "e4"]`,
+        target: `[data-square *= "e7"]`,
         content:
-            "Our knight being at E4 can be moved to: C3, C5, D6, D2, E6, F6, G5, G3, F2. Which means he also attack the same squares. Knight can be very dangerous because he can attack multiple squares at the same time.",
+            "Look at king position, it look scary but that position is draw, after you move king to E7 ",
     },
     {
+        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
-        target: `[data-square *= "e4"]`,
-        content:
-            "So, if our knight, can attack multiple squares at the same time, that means he can also give a check (attack on king, opponent is forced in next move to make safe king) and attack another piece?",
-    },
-    {
-        disableBeacon: true,
-        placement: "auto",
-        target: `[data-square *= "d6"]`,
-        content:
-            "Knight to D6 is best move, after capturing queen spend a while for practie kinght movement",
+        target: ".chessboard",
+        content: "Great! Press lesson done and head into next lesson!",
     },
 ];
 

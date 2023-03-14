@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
             <div
-                className="websiteBody flex justify-center items-center gap-44
+                className="flex justify-center items-center h-full w-full gap-44
             "
             >
                 <LessonsList></LessonsList>

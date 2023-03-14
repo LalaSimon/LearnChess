@@ -11,7 +11,7 @@ const Lesson2_5 = ({ isDone }) => {
         <>
             <Tour></Tour>
             <div className="flex gap-44 justify-center items-center">
-                <div className="szachownica flex flex-col">
+                <div className="flex flex-col">
                     <PlayChessVSRandom
                         boardposition={
                             "8/2pp2kp/p1p3p1/3p1p2/8/3Q4/8/4K3 w - - 0 1"
