@@ -5,9 +5,29 @@ const TOUR_STEPS = [
     {
         disableBeacon: true,
         placement: "auto",
-        target: ".szachownica",
+        target: ".chessboard",
+        content: "Focus on position:",
+    },
+    {
+        disableBeacon: true,
+        placement: "auto",
+        target: `[data-square *= "a1"]`,
         content:
-            "So, look at position, i like compare bishops to snipers, they can wait really long time from far away and then hit in proper time through whole chessboard. Try to to capture all pawns.",
+            "Look at this black squared white bishop, how far he can be moved and what is he attacking.",
+    },
+    {
+        disableBeacon: true,
+        placement: "auto",
+        target: `[data-square *= "g7"]`,
+        content:
+            "All the way to this square, so bishops are really strong pieces.",
+    },
+    {
+        disableBeacon: true,
+        placement: "auto",
+        target: `[data-square *= "a2"]`,
+        content:
+            "Same thing with white square bishop, capture now all pieces. After it press lesson done and head to next lesson",
     },
 ];
 
@@ -19,11 +39,12 @@ const Tour = () => {
                 continuous={true}
                 styles={{
                     options: {
-                        arrowColor: "#FFDD03",
-                        backgroundColor: "#FFDD03",
-                        primaryColor: "#0A0A0A",
+                        position: "absolute",
+                        arrowColor: "#f2e3bc",
+                        backgroundColor: "#f2e3bc",
+                        primaryColor: "#713f12",
                         textColor: "#0A0A0A",
-                        width: 400,
+                        width: 350,
                     },
                 }}
             />

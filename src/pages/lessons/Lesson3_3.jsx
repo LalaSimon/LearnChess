@@ -1,30 +1,30 @@
 import React from "react";
 import "../../index.scss";
 import { PlayChess } from "../../components/PlayChess";
-import { PlayChessVSRandom } from "../../components/PlayChessVSRandom";
-import { Tour } from "../tours/Tour2_3";
+import { Tour } from "../tours/Tour3_3";
 import { DoneButton } from "../../components/DoneButton";
 import { TipButton } from "../../components/TipButton";
 
-const Lesson2_3 = ({ isDone }) => {
+const Lesson3_3 = ({ isDone }) => {
     return (
         <>
             <Tour></Tour>
             <div className="flex gap-44 justify-center items-center">
                 <div className="szachownica flex flex-col">
-                    <PlayChessVSRandom
-                        boardposition={"2q1k3/5ppp/8/8/4N2N/8/8/3K4 w - - 0 1"}
+                    <PlayChess
+                        boardposition={
+                            "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"
+                        }
                         boardOrientation={"white"}
-                        user="w"
-                    ></PlayChessVSRandom>
+                    ></PlayChess>
                     <div className="flex justify-center gap-40 mt-10">
                         <TipButton
                             content={
-                                "Knights could be scary piece. He feels best in the center of chessboard."
+                                "Castle is like every other move, you need to think if its good at the time"
                             }
                         ></TipButton>
                         <DoneButton
-                            lessonId="lesson2_3"
+                            lessonId="lesson3_3"
                             className="ml-10"
                             isDone={isDone}
                         ></DoneButton>
@@ -35,4 +35,4 @@ const Lesson2_3 = ({ isDone }) => {
     );
 };
 
-export { Lesson2_3 };
+export { Lesson3_3 };

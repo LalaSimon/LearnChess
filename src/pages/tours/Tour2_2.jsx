@@ -5,21 +5,23 @@ const TOUR_STEPS = [
     {
         disableBeacon: true,
         placement: "auto",
-        target: ".szachownica",
+        target: ".chessboard",
         content:
-            "Now we will have fun with rooks. As you can see we have two of them. Do you remember how we can move them? Try to capture all of whites pawns.",
+            "Now we will have fun with rooks. As you can see we have two of them. Do you remember how can we move them? Try to capture all of whites pawns.",
     },
     {
+        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
-        target: ".szachownica",
+        target: ".chessboard",
         content:
             "Oh, small change right now. White pieces are from know moved by computer. Dont focus on checkmating enemy king. We will get there :) Get pawns.",
     },
     {
+        disableOverlay: true,
         disableBeacon: true,
         placement: "auto",
-        target: ".szachownica",
+        target: ".chessboard",
         content:
             "If computer stopped making moves that means you checkmated him (or he checkmated you, which i hope didnt happend : D)",
     },
@@ -33,11 +35,12 @@ const Tour = () => {
                 continuous={true}
                 styles={{
                     options: {
-                        arrowColor: "#FFDD03",
-                        backgroundColor: "#FFDD03",
-                        primaryColor: "#0A0A0A",
+                        position: "absolute",
+                        arrowColor: "#f2e3bc",
+                        backgroundColor: "#f2e3bc",
+                        primaryColor: "#713f12",
                         textColor: "#0A0A0A",
-                        width: 400,
+                        width: 350,
                     },
                 }}
             />

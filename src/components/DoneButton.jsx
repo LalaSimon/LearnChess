@@ -16,7 +16,11 @@ const DoneButton = ({ lessonId }) => {
         }
     };
 
-    return <button onClick={handleClick}>Lesson done</button>;
+    return (
+        <button className="donebtn" onClick={handleClick}>
+            Lesson done
+        </button>
+    );
 };
 
 export { DoneButton };

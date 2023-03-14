@@ -66,7 +66,7 @@ const PlayChessVSRandom = ({ boardposition, boardOrientation, user }) => {
     };
 
     return (
-        <div className="flex flex-col justify-center items-center border-2 border-solid border-black-500">
+        <div className="chessboard flex flex-col justify-center items-center border-2 border-solid border-black-500">
             <Chessboard
                 id="chessboard"
                 boardWidth={checkWidth()}
