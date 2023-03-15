@@ -15,7 +15,7 @@ const ProgressBar = () => {
             <span className="mt-4">Your progress</span>
             <Line
                 percent={percent}
-                strokeWidth={4}
+                strokeWidth={5}
                 strokeColor={
                     percent < 35
                         ? "red"

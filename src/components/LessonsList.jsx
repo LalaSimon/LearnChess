@@ -10,7 +10,7 @@ const LessonsList = () => {
 
     return (
         <>
-            <ul className="flex gap-12 flex-col p-8 px-12 lessonH overflow-y-visible overflow-x-auto chapterList">
+            <ul className="flex gap-12 flex-col p-8 px-12 lessonH overflow-y-visible overflow-x-auto chapterList mt-28">
                 <div
                     className="cursor-pointer p-3 border-2 border-solid border-yellow-900 text-center hover:bg-yellow-700 duration-300 rounded-xl scale-100 hover:scale-125 bg-yellow-900/50 text-white font-bold"
                     onClick={() => setToggleFirst(!toggleFirst)}
