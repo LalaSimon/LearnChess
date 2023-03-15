@@ -8,9 +8,4 @@ export default defineConfig({
     define: {
         global: {},
     },
-    resolve: {
-        alias: {
-            "@pages": path.resolve(__dirname, "src/pages"),
-        },
-    },
 });
