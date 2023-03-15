@@ -22,7 +22,7 @@ body {
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .lessonH {
@@ -45,4 +45,22 @@ body {
 }
 .active {
     background-color: rgb(113 63 18);
+}
+.me {
+    width: 600px;
+    height: 450px;
+}
+.FAQW {
+    width: 650px;
+}
+.FAQH {
+    height: 80%;
+}
+.FAQH::-webkit-scrollbar {
+    display: none;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
 }
