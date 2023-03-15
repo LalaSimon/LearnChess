@@ -24,7 +24,7 @@ const Lesson2_1 = ({ isDone }) => {
                             }
                         ></TipButton>
                         <DoneButton
-                            lessonId="lesson2s_1"
+                            lessonId="lesson2_1"
                             className="ml-10"
                             isDone={isDone}
                         ></DoneButton>

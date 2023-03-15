@@ -16,6 +16,9 @@ $orangeColor: #fbc403;
 html {
     font-size: 10px;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 body {
     margin: 0;
     padding: 0;
@@ -30,6 +33,17 @@ body {
     height: 100vh;
 }
 
-p-button {
-    background-color: red;
+.lessonH {
+    font-size: 1.1rem;
+    height: 36rem;
+}
+.lessonH::-webkit-scrollbar {
+    display: none;
+}
+
+.liColO {
+    background-color: #713f12;
+}
+.liColE {
+    background-color: #a57548;
 }

@@ -29,7 +29,7 @@ const TOUR_STEPS = [
         placement: "auto",
         target: '[data-square = "d5"',
         content:
-            "Now this pawn is under attack, remember, its not checkers. You can capture it but you dont have to. Think about what can happend in both scenario. You need to count variants - this is crucial part of advanced chess.",
+            "Now this pawn is under attack, remember, its not checkers. You can capture it but you dont have to. Think about what can happend in both scenarios. You need to count variants - this is crucial part of advanced chess.",
     },
     {
         disableOverlay: true,

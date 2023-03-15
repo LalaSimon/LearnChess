@@ -49,7 +49,7 @@ const TOUR_STEPS = [
         disableBeacon: true,
         target: ".chessboard",
         content:
-            "On E4 we have kings, in chess we have to protect our king and at this same time attack opponents' king. King can move and capture in every direction by only one square, which make him really slow piece.",
+            "On E1 and E8 we have kings, in chess we have to protect our king and at this same time attack opponents' king. King can move and capture in every direction by only one square, which make him really slow piece.",
     },
     {
         placement: "auto",
@@ -70,7 +70,7 @@ const TOUR_STEPS = [
         disableBeacon: true,
         target: ".chessboard",
         content:
-            "Important thing, pieces are attacking squares where they can go at the moment, except pawns, they attack on the on square diagonal in front of the them. So if you want to move king into square that is attacked by other pieces - thats illegal move.",
+            "Important thing, pieces are attacking squares where they can go at the moment, except pawns, they attack on the on diagonal squares  in front of the them. So if you want to move king into square that is attacked by other pieces - thats illegal move.",
     },
 ];
 

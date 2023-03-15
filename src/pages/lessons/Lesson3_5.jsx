@@ -20,7 +20,7 @@ const Lesson3_5 = ({ isDone }) => {
                     <div className="flex justify-center gap-40 mt-10">
                         <TipButton
                             content={
-                                "To attack your opponent after developing pieces is to make breakthroughs in position by pushing pawns"
+                                "To attack your opponent after developing pieces key is to make breakthroughs in position by pushing pawns"
                             }
                         ></TipButton>
                         <DoneButton

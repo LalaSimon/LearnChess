@@ -18,7 +18,11 @@ const Lesson3_2 = ({ isDone }) => {
                         boardOrientation={"white"}
                     ></PlayChess>
                     <div className="flex justify-center gap-40 mt-10">
-                        <TipButton content={""}></TipButton>
+                        <TipButton
+                            content={
+                                "At beginning think about moves that can build solid structure of pieces"
+                            }
+                        ></TipButton>
                         <DoneButton
                             lessonId="lesson3_2"
                             className="ml-10"

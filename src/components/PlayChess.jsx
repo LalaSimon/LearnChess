@@ -50,7 +50,7 @@ const PlayChess = ({ boardposition, boardOrientation }) => {
     };
 
     return (
-        <div className="chessboard flex flex-col justify-center items-center border-2 border-solid border-black-500">
+        <div className="chessboard flex flex-col mx-44 justify-center items-center border-2 border-solid border-black-500">
             <Chessboard
                 boardWidth={checkWidth()}
                 position={game.fen()} // Dont touch it!!! If you want a specific position, pass it to props in FEN

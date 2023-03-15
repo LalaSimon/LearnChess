@@ -17,13 +17,13 @@ const ProgressBar = () => {
                 percent={percent}
                 strokeWidth={4}
                 strokeColor={
-                    percent < 20
+                    percent < 35
                         ? "red"
-                        : percent < 40
+                        : percent < 55
                         ? "orange"
-                        : percent < 60
+                        : percent < 75
                         ? "yellow"
-                        : percent < 80
+                        : percent < 98
                         ? "green"
                         : "lightblue"
                 }

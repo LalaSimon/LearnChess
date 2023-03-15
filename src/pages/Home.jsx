@@ -8,11 +8,11 @@ const Home = () => {
     return (
         <>
             <div
-                className="flex justify-center items-center h-full w-full gap-44
+                className="flex justify-center items-center h-full w-full
             "
             >
                 <LessonsList></LessonsList>
-                <Outlet className="flex-1"></Outlet>
+                <Outlet></Outlet>
                 {localStorage.getItem("userData") !== null ? (
                     <UserProfile className="ml-40"></UserProfile>
                 ) : (

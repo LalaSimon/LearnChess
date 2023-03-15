@@ -9,10 +9,10 @@ const DoneButton = ({ lessonId }) => {
     const handleClick = () => {
         if (!isLessonDone) {
             localStorage.setItem(`progress ${lessonId} done`, "true");
-            setProgress(progress + 1);
+            setProgress(progress + 6.25);
         } else {
             localStorage.removeItem(`progress ${lessonId} done`);
-            setProgress(progress - 1);
+            setProgress(progress - 6.25);
         }
     };
 

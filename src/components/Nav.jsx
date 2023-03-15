@@ -21,7 +21,7 @@ const Nav = () => {
                         to="/AboutMe"
                         className="h-full flex justify-center items-center"
                     >
-                        About me
+                        About us
                     </Link>
                 </li>
                 <li className="hover:bg-yellow-900 duration-300 rounded-xl active:bg-yellow-700 scale-100 hover:scale-125 h-10 w-40 ">
