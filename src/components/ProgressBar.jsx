@@ -12,7 +12,7 @@ const ProgressBar = () => {
 
     return (
         <>
-            <span className="mt-4">Your progress</span>
+            <span className="mt-4 text-2xl">Your progress</span>
             <Line
                 percent={percent}
                 strokeWidth={5}

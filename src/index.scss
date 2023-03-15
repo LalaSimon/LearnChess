@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-$brownColor: #151515;
-$darkColor: #0a0a0a;
-$creamColor: #fbfcd4;
-$goldColor: #ffdd03;
-$orangeColor: #fbc403;
-
 #root {
     width: 100%;
     height: calc(100% - 10rem);
@@ -15,9 +9,6 @@ $orangeColor: #fbc403;
 
 html {
     font-size: 11px;
-}
-body::-webkit-scrollbar {
-    display: none;
 }
 body {
     margin: 0;
@@ -47,4 +38,11 @@ body {
 }
 .liColE {
     background-color: #a57548;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.active {
+    background-color: rgb(113 63 18);
 }

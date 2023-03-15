@@ -4,7 +4,6 @@ import JoyRide from "react-joyride";
 const TOUR_STEPS = [
     {
         disableBeacon: true,
-        disableOverlay: true,
         placement: "auto",
         target: ".chessboard",
         content:

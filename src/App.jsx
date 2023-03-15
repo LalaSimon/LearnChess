@@ -2,7 +2,7 @@ import React from "react";
 import "./index.scss";
 import { PlayChess } from "./components/PlayChess";
 import { Home } from "./pages/home";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { FAQ } from "./pages/FAQ";
 import { Nav } from "./components/Nav";
 import { AboutMe } from "./pages/AbouteMe";
@@ -26,6 +26,7 @@ import { Lesson3_6 } from "./pages/lessons/Lesson3_6";
 import { Lesson4_1 } from "./pages/lessons/Lesson4_1";
 import { Lesson4_2 } from "./pages/lessons/Lesson4_2";
 import { Lesson4_3 } from "./pages/lessons/Lesson4_3";
+import { PlayChessVSRandom } from "./components/PlayChessVSRandom";
 
 const App = () => {
     return (
@@ -33,7 +34,7 @@ const App = () => {
             <Nav></Nav>
             <Routes>
                 <Route path="/" element={<Home />}>
-                    <Route path="/" element={<PlayChess />} />
+                    <Route path="/" element={<PlayChessVSRandom user="w" />} />
                     <Route path="Lesson1_0" element={<Lesson1_0 />} />
                     <Route path="Lesson1_1" element={<Lesson1_1 />} />
                     <Route path="Lesson1_2" element={<Lesson1_2 />} />
@@ -62,4 +63,4 @@ const App = () => {
     );
 };
 
-export { App, PlayChess };
+export { App };
