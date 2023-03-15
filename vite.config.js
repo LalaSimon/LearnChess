@@ -8,4 +8,16 @@ export default defineConfig({
     define: {
         global: {},
     },
+    root: "./",
+    build: {
+        outDir: "dist",
+    },
+    server: {
+        port: 3000,
+    },
+    resolve: {
+        alias: {
+            "@": "/src",
+        },
+    },
 });
