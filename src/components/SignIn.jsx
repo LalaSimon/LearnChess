@@ -27,7 +27,7 @@ const SignIn = () => {
 
         if (data.user) {
             localStorage.setItem("userData", JSON.stringify(data.user));
-            navigate("/");
+            navigate("/Lesson1_0");
             document.location.reload(true);
         }
         if (error) {

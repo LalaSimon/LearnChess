@@ -12,14 +12,14 @@ const LessonsList = () => {
         <>
             <ul className="flex gap-12 flex-col p-8 px-12 lessonH overflow-y-visible overflow-x-auto chapterList mt-28">
                 <div
-                    className="cursor-pointer p-3 border-2 border-solid border-yellow-900 text-center hover:bg-yellow-700 duration-300 rounded-xl scale-100 hover:scale-125 bg-yellow-900/50 text-white font-bold"
+                    className="cursor-pointer p-3 border-2 border-solid border-yellow-900 text-center hover:bg-yellow-700 duration-300 rounded-xl scale-100 hover:scale-125 bg-yellow-900/50 text-white font-bold hover:shadow-lg hover:shadow-yellow-900"
                     onClick={() => setToggleFirst(!toggleFirst)}
                 >
                     Chapter 1 - What is chess about
                 </div>
                 {toggleFirst && (
                     <ul className="flex flex-col justify-center items-start gap-1 ">
-                        <li className="p-2 border-2 border-solid w-full border-yellow-900 text-center  duration-300 rounded-xl scale-100 hover:scale-125 text-white font-bold liColO">
+                        <li className="p-2 border-2 border-solid w-full border-yellow-900 text-center  duration-300 rounded-xl scale-100 hover:scale-125 text-white font-bold liColO ">
                             <Link to="/Lesson1_0"> Lesson 0 - Intro </Link>
                         </li>
                         <li className="p-2 border-2 border-solid w-full border-yellow-900 text-center duration-300 rounded-xl scale-100 hover:scale-125 text-white font-bold liColE">
@@ -35,7 +35,7 @@ const LessonsList = () => {
                 )}
 
                 <div
-                    className="cursor-pointer p-3 border-2 border-solid border-yellow-900 text-center hover:bg-yellow-700 duration-300 rounded-xl scale-100 hover:scale-125 bg-yellow-900/50 text-white font-bold"
+                    className="cursor-pointer p-3 border-2 border-solid border-yellow-900 text-center hover:bg-yellow-700 duration-300 rounded-xl scale-100 hover:scale-125 bg-yellow-900/50 text-white font-bold hover:shadow-lg hover:shadow-yellow-900"
                     onClick={() => setToggleSecond(!toggleSecond)}
                 >
                     Chapter 2 - How piecies moves?
@@ -63,7 +63,7 @@ const LessonsList = () => {
                     </ul>
                 )}
                 <div
-                    className="cursor-pointer p-3 border-2 border-solid border-yellow-900 text-center hover:bg-yellow-700 duration-300 rounded-xl scale-100 hover:scale-125 bg-yellow-900/50 text-white font-bold"
+                    className="cursor-pointer p-3 border-2 border-solid border-yellow-900 text-center hover:bg-yellow-700 duration-300 rounded-xl scale-100 hover:scale-125 bg-yellow-900/50 text-white font-bold hover:shadow-lg hover:shadow-yellow-900"
                     onClick={() => setToggleThird(!toggleThird)}
                 >
                     Chapter 3 - How to play game
@@ -95,7 +95,7 @@ const LessonsList = () => {
                     </ul>
                 )}
                 <div
-                    className="cursor-pointer p-3 border-2 border-solid border-yellow-900 text-center hover:bg-yellow-700 duration-300 rounded-xl scale-100 hover:scale-125 bg-yellow-900/50 text-white font-bold"
+                    className="cursor-pointer p-3 border-2 border-solid border-yellow-900 text-center hover:bg-yellow-700 duration-300 rounded-xl scale-100 hover:scale-125 bg-yellow-900/50 text-white font-bold hover:shadow-lg hover:shadow-yellow-900"
                     onClick={() => setToggleFourth(!toggleFourth)}
                 >
                     Chapter 4 - Summary
