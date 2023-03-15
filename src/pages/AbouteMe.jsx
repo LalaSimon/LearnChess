@@ -6,10 +6,9 @@ import "primeicons/primeicons.css";
 const AboutMe = () => {
     return (
         <>
-            z
             <div className="flex flex-col w-full h-full">
                 {" "}
-                <h1 className="text-4xl border-b-2 border-solid pb-10 text-center border-yellow-900">
+                <h1 className="text-4xl border-b-2 border-solid pb-10 pt-10 text-center border-yellow-900">
                     Chess bio
                 </h1>
                 <div className="flex justify-around mt-10">
@@ -19,7 +18,7 @@ const AboutMe = () => {
                         src={myImage}
                     />
                     <div className="flex flex-col justify-start items-center mx-14">
-                        <div className="mt-6 text-justify text-3xl flex flex-col gap-4">
+                        <div className="mt-6 text-justify text-3xl flex flex-col gap-4 pb-4">
                             <p>Hi! </p>
 
                             <p>
@@ -33,7 +32,7 @@ const AboutMe = () => {
                                 {" "}
                                 Chess is my biggest passion for a while and i
                                 decided to create an application where you can
-                                basically learn fundemntals and basics about
+                                basically learn fundamentals and basics about
                                 chess for free. I'm really advanced chess player
                                 to be honest, there are plenty of better players
                                 than me, but for teaching basics i think its
