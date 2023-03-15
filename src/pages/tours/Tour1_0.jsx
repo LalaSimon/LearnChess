@@ -3,6 +3,7 @@ import JoyRide from "react-joyride";
 
 const TOUR_STEPS = [
     {
+        showSkipButton: true,
         disableBeacon: true,
         disableOverlay: true,
         placement: "auto",

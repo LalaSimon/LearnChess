@@ -17,7 +17,10 @@ const DoneButton = ({ lessonId }) => {
     };
 
     return (
-        <button className="donebtn" onClick={handleClick}>
+        <button
+            className="donebtn bg-yellow-900 opacity-50 text-white p-3 flex justify-center text-center text-xl focus:outline-none duration-300 rounded-xl hover:bg-yellow-700 hover:opacity-100 scale-100 hover:scale-125"
+            onClick={handleClick}
+        >
             Lesson done
         </button>
     );
