@@ -1,11 +1,11 @@
 import React from "react";
 import "../../index.scss";
 import { PlayChess } from "../../components/PlayChess";
-import { Tour } from "../tours/Tour2_1";
+import { Tour } from "../tours/Tour3_4";
 import { DoneButton } from "../../components/DoneButton";
 import { TipButton } from "../../components/TipButton";
 
-const Lesson2_1 = ({ isDone }) => {
+const Lesson3_4 = ({ isDone }) => {
     return (
         <>
             <Tour></Tour>
@@ -13,18 +13,18 @@ const Lesson2_1 = ({ isDone }) => {
                 <div className="szachownica flex flex-col">
                     <PlayChess
                         boardposition={
-                            "8/pppppppp/8/8/8/8/PPPPPPPP/8 b - - 0 1"
+                            "rnbqk2r/pp2nppp/2pb4/3p2B1/3P4/2NB1N2/PPP2PPP/R2QK2R b KQkq - 3 7"
                         }
                         boardOrientation={"black"}
                     ></PlayChess>
                     <div className="flex justify-center gap-40 mt-10">
                         <TipButton
                             content={
-                                "Reminder - You cannot move back with pawns!"
+                                "Bishops and Rooks love open position without pawns, try to put them in those positions"
                             }
                         ></TipButton>
                         <DoneButton
-                            lessonId="lesson2_1"
+                            lessonId="lesson3_4"
                             className="ml-10"
                             isDone={isDone}
                         ></DoneButton>
@@ -35,4 +35,4 @@ const Lesson2_1 = ({ isDone }) => {
     );
 };
 
-export { Lesson2_1 };
+export { Lesson3_4 };
