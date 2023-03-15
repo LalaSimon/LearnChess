@@ -10,7 +10,7 @@ const LessonsList = () => {
 
     return (
         <>
-            <ul className="flex gap-12 flex-col p-8 px-12 lessonH overflow-y-visible overflow-x-auto">
+            <ul className="flex gap-12 flex-col p-8 px-12 lessonH overflow-y-visible overflow-x-auto chapterList">
                 <div
                     className="cursor-pointer p-3 border-2 border-solid border-yellow-900 text-center hover:bg-yellow-700 duration-300 rounded-xl scale-100 hover:scale-125 bg-yellow-900/50 text-white font-bold"
                     onClick={() => setToggleFirst(!toggleFirst)}
@@ -66,7 +66,7 @@ const LessonsList = () => {
                     className="cursor-pointer p-3 border-2 border-solid border-yellow-900 text-center hover:bg-yellow-700 duration-300 rounded-xl scale-100 hover:scale-125 bg-yellow-900/50 text-white font-bold"
                     onClick={() => setToggleThird(!toggleThird)}
                 >
-                    Chapter 3 - How to actually play game
+                    Chapter 3 - How to play game
                 </div>
                 {toggleThird && (
                     <ul className="flex flex-col justify-center items-start gap-1">
