@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.scss";
-import { PlayChess } from "./components/PlayChess";
 import { Home } from "./pages/home";
 import { Route, Routes } from "react-router-dom";
 import { FAQ } from "./pages/FAQ";
