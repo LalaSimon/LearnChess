@@ -21,7 +21,7 @@ const FAQ = () => {
                 </span>
             </div>
 
-            <div className="FAQ flex flex-col justify-center items-center gap-5 mt-14 w-full FAQH FAQW overflow-y-visible overflow-x-auto text-l border-b-2 border-t-2 border-solid border-yellow-900 centered">
+            <div className="FAQ flex flex-col justify-center items-center gap-5 mt-6 w-full FAQH FAQW overflow-y-visible overflow-x-auto text-l border-b-2 border-t-2 border-solid border-yellow-900 centered">
                 <span
                     className="bg-yellow-900 shadow-md shadow-yellow-900/50 p-3 cursor-pointer duration-300 rounded-xl scale-100 hover:scale-110 text-white font-bold"
                     onClick={() => setToggleFirst(!toggleFirst)}
