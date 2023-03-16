@@ -54,7 +54,6 @@ To start the project just `git clone` whole repository, then `npm install`. Site
 
 In case you want to use `PlayChess.jsx` or `PlayChessVSRandom` components. You need to pass props to them. Read methods that are included in those components to understand which props are obligatory to proper run .
 
-`write-your-code-here`
 
 ## Project Status
 
