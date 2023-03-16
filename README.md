@@ -1,10 +1,9 @@
 ### LearnChess
 
-# Project Name
 
 LearnChess is a application where people that never played chess in their lives can within an hour learn basics and fundamentals about chess. Site is 100% free and useable. You can track your progress during course if you create an account, after that application will guide you from the beginning to the end of course. Beside course there is tab where you can play chess in your home if you dont own a physical chessboard. Fully functional chessboard where you can filp orientantion so player on move can see his piecies straight in front of them.
 
-Live demo is available[_here_](https://learnchessbylala.netlify.app/)
+Live demo is available [_here_](https://learnchessbylala.netlify.app/)
 
 ## Table of Contents
 
