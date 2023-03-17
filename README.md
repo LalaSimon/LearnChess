@@ -1,7 +1,7 @@
 ### LearnChess
 
 
-LearnChess is a application where people that never played chess in their lives can within an hour learn basics and fundamentals about chess. Site is 100% free and useable. You can track your progress during course if you create an account, after that application will guide you from the beginning to the end of course. Beside course there is tab where you can play chess in your home if you dont own a physical chessboard. Fully functional chessboard where you can filp orientantion so player on move can see his piecies straight in front of them.
+LearnChess is a application where people that never played chess in their lives can within an hour learn basics and fundamentals about chess. Site is 100% free and useable. You can track your progress during course if you create an account, after that application will guide you from the beginning to the end of course. Beside course there is tab where you can play chess in your home if you dont own a physical chessboard. Fully functional chessboard where you can filp orientantion so player on move can see his piecies straight in front of them. Due to usiing React JoyRide site is not usable on mobile yet, library made it a litle bit to complicated (in future features list already)
 
 Live demo is available [_here_](https://learnchessbylala.netlify.app/)
 
@@ -77,6 +77,7 @@ To do:
 -   This project was inspired by `Chess.JS` and `React-Chessboard`, those two libraries gave me possibility to create this app. Ofcourse there were plenty
     libraries that i used, but those two are directily taking care of chess aspect of this app which is the most important.
 -   Beside chess libraries this project was based on `React JoyRide` which hold control about guide and whole user expierence during course.
+-   Big big big shoutout to [@MarceliOlszewski](https://pl.linkedin.com/in/marceli-olszewski-80419613a) - My mentor who helped and teached me advanced       knowledge about JS and React, without it this project wouldnt exist. 
 
 ## Contact
 
