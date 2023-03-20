@@ -33,14 +33,14 @@ const AboutMe = () => {
                                 Chess is my biggest passion for a while and i
                                 decided to create an application where you can
                                 basically learn fundamentals and basics about
-                                chess for free. I'm really advanced chess player
-                                to be honest, there are plenty of better players
-                                than me, but for teaching basics i think its
-                                enough.
+                                chess for free. I'm definetly not great chess
+                                player to be honest, there are plenty of better
+                                players than me, but for teaching basics i think
+                                its enough.
                             </p>
 
                             <p>
-                                Officialy i have only 1114 fide which im not
+                                Officialy i have only 1114 elo which im not
                                 proud of, because i played only one classical
                                 tournament during my journey with chess and it
                                 was in early 2022. At this time (march 2023) i
