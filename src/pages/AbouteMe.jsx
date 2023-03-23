@@ -40,12 +40,12 @@ const AboutMe = () => {
                             </p>
 
                             <p>
-                                Officialy i have only 1114 elo which im not
+                                Officialy i have only 1115 elo which im not
                                 proud of, because i played only one classical
                                 tournament during my journey with chess and it
                                 was in early 2022. At this time (march 2023) i
-                                have 1400 elo points on Chess.com which place me
-                                in almost 4% of best players in the world.{" "}
+                                over 1500 elo points on Chess.com which place me
+                                in less than 3% of best players in the world.{" "}
                             </p>
 
                             <p>
