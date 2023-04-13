@@ -51,6 +51,12 @@ const OpenBoard = ({ boardposition, boardOrientation }) => {
 
         return value;
     };
+
+    const logPosition = () => {
+        const moves = game.history();
+
+        console.log(moves);
+    };
     return (
         <>
             <p className="text-2xl text-center mx-96 mt-14 border-b-2 border-solid border-yellow-900 p-2">
@@ -83,6 +89,12 @@ const OpenBoard = ({ boardposition, boardOrientation }) => {
                         onClick={undoMove}
                     >
                         Undo move
+                    </button>
+                    <button
+                        onClick={logPosition}
+                        className="bg-yellow-900 opacity-50 text-white p-4 flex justify-center text-center text-xl focus:outline-none duration-300 rounded-xl hover:bg-yellow-700 hover:opacity-100 scale-100 hover:scale-125 shadow-lg shadow-yellow-900 active:shadow-inner active:shadow-gray-700"
+                    >
+                        Konsol log
                     </button>
                 </div>
             </div>

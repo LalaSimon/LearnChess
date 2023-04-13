@@ -28,12 +28,6 @@ const TOUR_STEPS = [
         target: ".chessboard",
         content: `www.chess.com and www.lichess.com are most popular platforms where you can play chess online and learn theory.`,
     },
-    {
-        disableBeacon: true,
-        placement: "auto",
-        target: ".chessboard",
-        content: `www.chess.com and www.lichess.com are most popular platforms where you can play chess online and learn theory.`,
-    },
 ];
 
 const Tour = () => {
