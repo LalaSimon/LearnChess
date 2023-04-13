@@ -21,7 +21,6 @@ const Home = () => {
             </div>
         </>
     );
-    // pass props called boardposition = {"STRING"} in FEN format to load position you want
 };
 
 export { Home };
